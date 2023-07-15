@@ -63,7 +63,7 @@ public class CreateController {
     public BaseResponse<String> register(@RequestBody AdminDetails adminDetails)
     {
         try {
-            if(Utility.validatePassword(adminDetails.getPassword()) && Utility.validateEmailId(adminDetails.getEmail())) {
+            if(Utility.validatePassword(adminDetails.getPassword())) {
                 return adminService.sendCodeToMail(adminDetails.getEmail());
             }
             else{

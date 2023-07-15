@@ -15,7 +15,7 @@ public interface Urls {
     String UPDATE_PROFILE = "/update/profile";
     String IS_AUTHORIZED = "/is-authorized";
     String GET_ALL_USER = "/getAllUser";
-    String PASSCODE = "/passcode";
+    String PASSCODE = "/notify/send-mail";
     String CHANGE_AUTHORITY = "Changed Authority";
 
 
